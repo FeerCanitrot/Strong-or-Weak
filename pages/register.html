@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700 display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/muscular-male-gymnast-exercising-with-two-dumbbells-svgrepo-com.svg" type="image/x-icon">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <main class="main__register">
+        <header class="header__index">
+            <a href="../index.html">
+                <img src="../assets/img/muscular-MAS GRANDE-gymnast-exercising-with-two-dumbbells-svgrepo-com (1).svg" alt="logo" class="img-header">
+            </a>
+            <nav class="nav__menu">
+                <ul class="list">
+                    <li>
+                        <a href="./activity.html">Activity</a>
+                    </li>
+                    <li>
+                        <a href="./plans.html">Plans</a>
+                    </li>
+                    <li>
+                        <a href="./register.html">Register</a>
+                    </li>
+                    <li>
+                        <a href="./pages/nosotros.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="form__register">
+            <div class="container pt-5">
+                <h1 class="text-center">Ingrese sus datos personales</h1>
+                <form>
+                  <div class="form-group mt-5 mb-4">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="apellido mb-4">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="genero">Género:</label>
+                    <select class="form-control" id="genero">
+                      <option value="masculino">Masculino</option>
+                      <option value="femenino">Femenino</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="comentario">Comentario:</label>
+                    <textarea class="form-control" id="comentario" rows="3" placeholder="Ingrese su comentario"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-secondary mb-4">Enviar</button>
+                  <button type="reset" class="btn btn-dark mb-4">Limpiar</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer__index">
+            <div class="footer__redes">
+                <h3>Información de contacto</h3>
+                <p>Teléfono: 123-456-789</p>
+                <p>Email: strongorweak@correo.com</p>
+            </div>
+            <div class="footer__iconos">
+                <h3>Redes sociales</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/pie de pagina/facebook-svgrepo-com.svg" alt="Logo de facebook" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/pie de pagina/instagram-svgrepo-com.svg" alt="Logo de instagram" width="30">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyright">© Copyright 2024 Gimnasio Strong or Weak. Reservados todos los derechos</p>
+        </footer>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
