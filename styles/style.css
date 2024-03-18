@@ -421,7 +421,6 @@ body{
     text-align: center;
     box-shadow: 2px 5px 7px 3px ;
     margin: 10% 0 0 3%;
-
 }
 
 .articleGym button{
@@ -438,6 +437,14 @@ body{
     border-radius: 5%;
 }
 
+.articleGym:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.articleGym:not(hover){
+    transition: transform 0.3s ease-in-out;
+}
 
 @media(min-width:768px) and (max-width:1024px){
     .class__container{
