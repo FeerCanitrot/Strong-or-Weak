@@ -41,7 +41,7 @@ body{
 }
 
 .header__index img{
-    width: 30%;
+    width: 25%;
 }
 
 .title__index{
@@ -294,8 +294,10 @@ body{
     grid-template-columns: auto auto auto;
     grid-template-rows: 1f 1f;
     row-gap: 30px;
-    column-gap: 30px;
+    column-gap: 60px;
     margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .articleGym{
@@ -337,8 +339,8 @@ body{
         height: auto;
         grid-template-columns: auto auto;
         grid-template-rows: 1f 1f;
-        row-gap: 10px;
-        column-gap: 10px;
+        row-gap: 40px;
+        column-gap: 40px;
         margin-bottom: 5%;
     }
     .articleGym p{
