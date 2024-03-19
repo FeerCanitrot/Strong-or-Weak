@@ -37,11 +37,11 @@ body{
 .main__index{
     display: grid;
     width: 100%;
-    grid-template-rows: 100px auto auto 140px;
+    grid-template-rows: auto auto auto 140px;
 }
 
 .header__index img{
-    width: 25%;
+    width: 30%;
 }
 
 .title__index{
