@@ -384,6 +384,12 @@ body{
 
 /* -----------------Register--------------------- */
 
+.main__register{
+    display: grid;
+    grid-template-rows: auto auto 140px;
+    grid-area: auto;
+}
+
 .form__register{
     background-color: #00000098;
 }
