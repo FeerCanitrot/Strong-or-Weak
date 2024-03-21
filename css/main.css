@@ -1,7 +1,91 @@
+@charset "UTF-8";
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Esquema de cuerda elástica;
+  src: url(../assets/fonts/BungeeOutline-Regular.ttf);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Esquema de cuerda elástica, sans-serif;
+  font-weight: bold;
+  color: rgb(255, 79, 202);
+}
+
+p, a, li, span, input, button, table, form, nav, ul {
+  font-family: "PT Sans", sans-serif;
+  color: rgb(153, 153, 153);
+}
+
+.main__activity button {
+  font-size: 35px;
+  font-style: italic;
+  width: 16%;
+  height: 20%;
+  color: rgb(216, 255, 108);
+  padding: 10px 20px;
+  background-color: rgb(216, 255, 108);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.articleGym button {
+  font-style: italic;
+  color: rgb(216, 255, 108);
+  background-color: rgb(216, 255, 108);
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.header__index img {
+  width: 30%;
+}
+
+body {
+  background-image: url(../assets/img/Clases/detrasDeClases2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.main__index {
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto auto auto 140px;
+}
+.main__index__title {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main__index__title__title img {
+  width: 25%;
+}
+.main__index__title__h1 {
+  font-size: 90px;
+  background-color: rgba(0, 0, 0, 0.5960784314);
+  color: rgb(255, 79, 202);
+  padding: 3% 10% 3% 10%;
+}
+.main__index__section2 {
+  background-color: #131518;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.main__index__section2__activity p {
+  font-size: 35px;
+  line-height: 1.7;
 }
 
 /*# sourceMappingURL=main.css.map */

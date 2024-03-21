@@ -1,0 +1,23 @@
+.main__activity button{
+    font-size: 35px;
+    font-style:italic;
+    width: 16%;
+    height: 20%;
+    color: $color-secondary;
+    padding: 10px 20px;
+    background-color: $color-secondary;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.articleGym button{
+    font-style:italic;
+    color:$color-secondary;
+    background-color:$color-secondary;
+    color: rgb(0, 0, 0);
+    border: none;
+}

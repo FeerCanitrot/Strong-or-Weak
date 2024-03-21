@@ -44,7 +44,7 @@ body{
     width: 30%;
 }
 
-.title__index{
+.main__title{
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@ body{
     align-items:center;
 }
 
-.title__index img{
+.main__title img{
     width: 25%;
 }
 
@@ -67,7 +67,7 @@ body{
     .title__h1{
         font-size: 60px;
     }
-    .title__index img{
+    .main__title img{
         width: 30%;
     }
 }
@@ -76,7 +76,7 @@ body{
     .title__h1{
         font-size:40px;
     }
-    .title__index img{
+    .main__title img{
         width: 40%;
     }
 }
@@ -85,7 +85,7 @@ body{
     .title__h1{
         font-size:35px;
     }
-    .title__index img{
+    .main__title img{
         width: 60%;
     }
 }
@@ -94,7 +94,7 @@ body{
     .title__h1{
         font-size:27px;
     }
-    .title__index img{
+    .main__title img{
         width: 60%;
     }
 }
@@ -103,52 +103,52 @@ body{
     .title__h1{
         font-size:27px;
     }
-    .title__index img{
+    .main__title img{
         width: 20%;
     }
 }
 
-.activity__section{
+.main__section2{
     background-color: #131518;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
 }
 
-.activity__section p{
+.main__activity p{
     font-size: 35px;
     line-height: 1.7;
 }
 
 @media(min-width:1024px) and (max-width:1440px) {
-    .activity__section p{
+    .main__section2 p{
         font-size: 20px;
         line-height: 1.0;
     }
 }
 
 @media(min-width:768px) and (max-width:1024px){
-    .activity__section p{
+    .main__section2 p{
         font-size: 20px;
     }
 }
 
 @media(min-width:480px) and (max-width:768px){
-    .activity__section p{
+    .main__section2 p{
         font-size: 15px;
         margin-top: 2%;
     }
 }
 
 @media(min-width:360px) and (max-width:480px){
-    .activity__section p{
+    .main__section2 p{
         font-size: 13px;
         margin-top: 2%;
     }
 }
 
 
-.activity__section button{
+.main__activity button{
     font-size: 35px;
     font-style:italic;
     width: 16%;
@@ -165,50 +165,50 @@ body{
 }
 
 @media(min-width:1336px) and (max-width:1440px){
-    .activity__section button{
+    .main__activity button{
         font-size: 20px;
     }
 }
 
 @media(min-width:1024px) and (max-width:1336px){
-    .activity__section button{
+    .main__activity button{
         font-size: 15px;
     }
 }
 
 @media(min-width:768px) and (max-width:1024px){
-    .activity__section button{
+    .main__activity button{
         margin-top: 4%;
         font-size: 13px;
     }
 }
 
 @media(min-width:480px) and (max-width:768px){
-    .activity__section button{
+    .main__activity button{
         font-size: 15px;
         width: 25%;
     }
 }
 
 @media(min-width:360px) and (max-width:480px){
-    .activity__section button{
+    .main__activity button{
         font-size: 13px;
         width: 30%;
     }
 }
 
-.activity__section h2{
+.main__activity h2{
     font-size: 40px;
 }
 
 @media(min-width:480px) and (max-width:768px){
-    .activity__section h2{
+    .main__activity h2{
         font-size: 27px;
     }
 }
 
 @media(min-width:360px) and (max-width:480px){
-    .activity__section h2{
+    .main__activity h2{
         font-size: 20px;
     }
 }

@@ -1,0 +1,9 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: Esquema de cuerda elástica, sans-serif;
+    font-weight: bold;
+    color: $color-text;
+}
+p, a, li, span, input, button, table, form, nav, ul{
+    font-family: "PT Sans", sans-serif;
+    color: $color-text-secondary;
+}

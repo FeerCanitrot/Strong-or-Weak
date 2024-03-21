@@ -1,6 +1,9 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
- 
+@import "utilities/variables";
+@import "base/reset";
+@import "base/fonts";
+@import "base/typography";
+@import "components/buttons";
+@import "layout/layaout";
+@import "layout/header";
+@import "components/body";
+@import "components/mainindex";
