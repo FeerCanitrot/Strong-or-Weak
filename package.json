@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "aplicando scss a mi proyecto de CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FeerCanitrot/Strong-or-Weak.git"
+  },
+  "author": "Fernando Canitrot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FeerCanitrot/Strong-or-Weak/issues"
+  },
+  "homepage": "https://github.com/FeerCanitrot/Strong-or-Weak#readme"
+}
