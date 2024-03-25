@@ -1,0 +1,86 @@
+.section__plans{
+    background-color: $color-primary;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    .planes{
+        margin: 7% 0 7% 0;
+        width: 700px;
+        padding: 20px;
+        background-color: rgb(27, 27, 27);
+        border-radius: 5px;
+        box-shadow: 0 6px 12px rgb(156, 10, 108);
+        .payment-details p{
+            font-size: 24px;
+            padding: 2%;
+        }
+        .payment-options p{
+            font-size: 22px;
+            padding: 2%;
+            padding-bottom: 5%;
+        }
+        .fomraDePagos h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li{
+            border-bottom: 3px solid rgb(156, 10, 108);;
+            padding: 10px 0;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .payment-plan {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        .payment-details {
+            margin-left: 20px;
+        }
+    }
+    .fomraDePagos {
+        margin: 7% 0 7% 0;
+        width: 700px;
+        padding: 20px;
+        background-color: rgb(27, 27, 27);
+        border-radius: 5px;
+        box-shadow: 0 6px 12px rgb(156, 10, 108);
+        h2{
+            text-align: center;
+            font-size: 40px;
+            margin: 20px 0 40px 0;
+        }
+        .payment-options {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column
+        }
+        .payment-option {
+            margin: 30px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .payment-option h3{
+            font-size: 27px;
+            font-family: Arial, sans-serif;
+            padding: 3%;
+        }
+        .payment-option:hover {
+            background-color: #b13797b2;
+        }
+    }
+}

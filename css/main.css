@@ -217,4 +217,91 @@ body {
   width: 90px;
 }
 
+.section__plans {
+  background-color: #131518;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+.section__plans .planes {
+  margin: 7% 0 7% 0;
+  width: 700px;
+  padding: 20px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgb(156, 10, 108);
+}
+.section__plans .planes .payment-details p {
+  font-size: 24px;
+  padding: 2%;
+}
+.section__plans .planes .payment-options p {
+  font-size: 22px;
+  padding: 2%;
+  padding-bottom: 5%;
+}
+.section__plans .planes .fomraDePagos h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.section__plans .planes h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.section__plans .planes ul {
+  list-style-type: none;
+  padding: 0;
+}
+.section__plans .planes li {
+  border-bottom: 3px solid rgb(156, 10, 108);
+  padding: 10px 0;
+}
+.section__plans .planes li:last-child {
+  border-bottom: none;
+}
+.section__plans .planes .payment-plan {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.section__plans .planes .payment-details {
+  margin-left: 20px;
+}
+.section__plans .fomraDePagos {
+  margin: 7% 0 7% 0;
+  width: 700px;
+  padding: 20px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgb(156, 10, 108);
+}
+.section__plans .fomraDePagos h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0 40px 0;
+}
+.section__plans .fomraDePagos .payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.section__plans .fomraDePagos .payment-option {
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 22px;
+}
+.section__plans .fomraDePagos .payment-option h3 {
+  font-size: 27px;
+  font-family: Arial, sans-serif;
+  padding: 3%;
+}
+.section__plans .fomraDePagos .payment-option:hover {
+  background-color: rgba(177, 55, 151, 0.6980392157);
+}
+
 /*# sourceMappingURL=main.css.map */
