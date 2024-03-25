@@ -304,4 +304,121 @@ body {
   background-color: rgba(177, 55, 151, 0.6980392157);
 }
 
+.main__register {
+  display: grid;
+  grid-template-rows: auto auto 140px;
+  grid-area: auto;
+  background-color: rgba(0, 0, 0, 0.5960784314);
+}
+.main__register .form__register {
+  padding: 100px 0 100px 0;
+}
+.main__register .form__register .form-group label {
+  font-size: 30px;
+}
+.main__register .form__register button {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+}
+.main__register .container h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.fixed {
+  position: fixed;
+  right: 30px;
+  top: 300px;
+  border-radius: 100%;
+  z-index: 3;
+}
+
+.ubicacion iframe {
+  width: 100%;
+  filter: invert(100%);
+}
+
+.section__about2 {
+  background-color: #131518;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "promociones promociones" "profesores preguntasFrecuentes";
+  justify-content: space-between;
+}
+.section__about2 .profesores {
+  grid-area: profesores;
+  display: inline-block;
+}
+.section__about2 .profesores ul {
+  list-style-type: none;
+  padding: 0;
+}
+.section__about2 .profesores li {
+  border-bottom: 3px solid rgba(255, 79, 202, 0.281);
+  padding: 20px;
+}
+.section__about2 .profesores h2 {
+  font-size: 50px;
+  text-align: center;
+}
+.section__about2 .profesores h3 {
+  font-size: 28px;
+  font-family: Arial, sans-serif;
+}
+.section__about2 .profesores p {
+  font-size: 17px;
+}
+.section__about2 .promociones {
+  grid-area: promociones;
+  margin: 2% auto;
+  padding: 20px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgb(216, 255, 108);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__about2 .promociones h2 {
+  font-size: 50px;
+  color: rgb(216, 255, 108);
+  margin-bottom: 5%;
+}
+.section__about2 .promociones .promoItem {
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgb(216, 255, 108);
+  padding-bottom: 20px;
+}
+.section__about2 .promociones .promoItemTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 2%;
+  color: rgb(216, 255, 108);
+  font-family: Arial, sans-serif;
+}
+.section__about2 .promociones .promoItemDescription {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.section__about2 .preguntasFrecuentes {
+  grid-area: preguntasFrecuentes;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-size: 20px;
+}
+.section__about2 .preguntasFrecuentes h2 {
+  font-size: 50px;
+}
+.section__about2 .preguntasFrecuentes h3 {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.section__about2 .preguntasFrecuentes p {
+  font-size: 17px;
+}
+
 /*# sourceMappingURL=main.css.map */

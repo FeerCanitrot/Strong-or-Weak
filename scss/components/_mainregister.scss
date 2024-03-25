@@ -1,0 +1,21 @@
+.main__register{
+    display: grid;
+    grid-template-rows: auto auto 140px;
+    grid-area: auto;
+    background-color: $background-title;
+    .form__register{
+        padding: 100px 0 100px 0;
+        .form-group label{
+            font-size: 30px;
+        }
+        button{
+            width: 200px;
+            height: 60px;
+            font-size: 20px;
+        }
+    }
+    .container h1{
+        font-size: 50px;
+        font-weight:bold;
+    }
+}

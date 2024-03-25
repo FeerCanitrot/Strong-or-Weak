@@ -1,0 +1,96 @@
+.fixed{
+    position: fixed;
+    right: 30px;
+    top: 300px;
+    border-radius: 100%;
+    z-index: 3;
+}
+.ubicacion iframe{
+    width: 100%; 
+    filter: invert(100%); 
+}
+.section__about2{
+    background-color: $color-primary;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "promociones promociones"
+    "profesores preguntasFrecuentes"
+    ;
+    justify-content: space-between;
+    .profesores{
+        grid-area: profesores;
+        display: inline-block;
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        li{
+            border-bottom: 3px solid rgba(255, 79, 202, 0.281);
+            ;
+            padding: 20px;
+        }
+        h2{
+            font-size: 50px;
+            text-align: center;
+        }
+        h3{
+            font-size: 28px;
+            font-family: Arial, sans-serif;
+        }
+        p{
+            font-size: 17px;
+        }
+    }
+    .promociones{
+        grid-area: promociones;
+        margin: 2% auto;
+        padding: 20px;
+        background-color: rgb(27, 27, 27);
+        border-radius: 5px;
+        box-shadow: 0 6px 12px rgb(216, 255, 108);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 50px;
+            color: rgb(216, 255, 108);;
+            margin-bottom: 5%;
+        }
+        .promoItem{
+            margin-bottom: 20px;
+            border-bottom: 3px solid rgb(216, 255, 108);
+            padding-bottom: 20px;
+        }
+        .promoItemTitle{
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 2%;
+            color: rgb(216, 255, 108);
+            font-family: Arial, sans-serif;
+        }
+        .promoItemDescription{
+            font-size: 17px;
+            line-height: 1.5;
+        }
+    }
+    .preguntasFrecuentes{
+        grid-area: preguntasFrecuentes;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        font-size: 20px;
+        h2{
+            font-size: 50px;
+        }
+        h3{
+            font-family: Arial, sans-serif;
+            font-size: 28px;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        p{
+            font-size: 17px;
+        }
+    }
+}
