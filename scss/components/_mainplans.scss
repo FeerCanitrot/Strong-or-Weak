@@ -1,3 +1,27 @@
+@mixin s {
+    @media (min-width: 360px) and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin m {
+    @media (min-width: 480px) and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin l {
+    @media (min-width: 768px) and (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1024px) and (max-width:1440px){
+        @content;
+    }
+}
+
 .section__plans{
     background-color: $color-primary;
     display: grid;
@@ -13,16 +37,6 @@
         .payment-details p{
             font-size: 24px;
             padding: 2%;
-        }
-        .payment-options p{
-            font-size: 22px;
-            padding: 2%;
-            padding-bottom: 5%;
-        }
-        .fomraDePagos h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 40px;
         }
         h2{
             text-align: center;
@@ -66,6 +80,11 @@
             flex-wrap: wrap;
             flex-direction: column
         }
+        .payment-options p{
+            font-size: 24px;
+            padding: 2%;
+            padding-bottom: 5%;
+        }
         .payment-option {
             margin: 30px;
             padding: 10px;
@@ -81,6 +100,135 @@
         }
         .payment-option:hover {
             background-color: #b13797b2;
+        }
+    }
+    @include xl{
+        .planes{
+            width: 450px;
+            height: 800px;
+            .payment-details p{
+                font-size: 18px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            .payment-plan {
+                margin-bottom: 10px;
+                font-size: 25px;
+            }
+            .payment-details {
+                margin-left: 20px;
+            }
+        }
+        .fomraDePagos{
+            width: 450px;
+            height: 800px;
+            .payment-options p{
+                font-size: 18px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            .payment-options {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column
+            }
+            .payment-option {
+                margin: 10px;
+                font-size: 22px;
+            }
+            .payment-option h3{
+                font-size: 24px;
+            }
+        }
+    }
+    @include l{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    @include m{
+        grid-template-columns: auto;
+        .planes{
+            width: 430px;
+            height: 800px;
+            .payment-details p{
+                font-size: 18px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            .payment-plan {
+                margin-bottom: 10px;
+                font-size: 25px;
+            }
+            .payment-details {
+                margin-left: 20px;
+            }
+        }
+        .fomraDePagos{
+            width: 430px;
+            height: 800px;
+            .payment-options p{
+                font-size: 18px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            .payment-options {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column
+            }
+            .payment-option {
+                margin: 10px;
+                font-size: 22px;
+            }
+            .payment-option h3{
+                font-size: 24px;
+            }
+        }
+    }
+    @include s{
+        grid-template-columns: auto;
+        .planes{
+            width: 330px;
+            height: 600px;
+            .payment-details p{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            .payment-plan {
+                margin-bottom: 10px;
+                font-size: 15px;
+            }
+            .payment-details {
+                margin-left: 20px;
+            }
+        }
+        .fomraDePagos{
+            width: 330px;
+            height: 600px;
+            .payment-options p{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            .payment-options {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column
+            }
+            .payment-option {
+                margin: 10px;
+                font-size: 10px;
+            }
+            .payment-option h3{
+                font-size: 15px;
+            }
         }
     }
 }

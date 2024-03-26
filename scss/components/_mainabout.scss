@@ -1,9 +1,52 @@
+@mixin s {
+    @media (min-width: 360px) and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin m {
+    @media (min-width: 480px) and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin ml {
+    @media (min-width: 480px) and (max-width:768px) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin l {
+    @media (min-width: 768px) and (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin ll {
+    @media (min-width: 768px) and (max-width:1024px) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1024px) and (max-width:1440px){
+        @content;
+    }
+}
+
 .fixed{
     position: fixed;
     right: 30px;
     top: 300px;
     border-radius: 100%;
     z-index: 3;
+    filter: invert(50%);
+    img{
+        width: 90px;
+        @include s{
+            width: 60px;
+        }
+    }
 }
 .ubicacion iframe{
     width: 100%; 
@@ -91,6 +134,158 @@
         }
         p{
             font-size: 17px;
+        }
+    }
+    @include xl{
+        .promociones{
+            h2{
+                font-size: 40px;
+            }
+            .promoItemTitle{
+                font-size: 20px;
+            }
+            .promoItemDescription{
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+        .profesores{
+            h2{
+                font-size: 40px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .preguntasFrecuentes{
+            h2{
+                font-size: 40px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    @include l{
+        .promociones{
+            h2{
+                font-size: 30px;
+            }
+        }
+        .profesores{
+            h2{
+                font-size: 30px;
+            }
+        }
+        .preguntasFrecuentes{
+            h2{
+                font-size: 27px;
+            }
+        }
+    }
+    @include m{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "promociones"
+        "profesores"
+        "preguntasFrecuentes"
+        ;
+        justify-content: center;
+        .promociones{
+            grid-area: promociones;
+            margin-bottom: 30px;
+            h2{
+                font-size: 30px;
+            }
+            .promoItemTitle{
+                font-size: 20px;
+            }
+            .promoItemDescription{
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+        .profesores{
+            grid-area: profesores;
+            h2{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .preguntasFrecuentes{
+            grid-area: preguntasFrecuentes;
+            h2{
+                font-size: 30px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    @include s{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "promociones"
+        "profesores"
+        "preguntasFrecuentes"
+        ;
+        justify-content: center;
+        .promociones{
+            grid-area: promociones;
+            margin-bottom: 30px;
+            h2{
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+            }
+            .promoItemTitle{
+                font-size: 15px;
+            }
+            .promoItemDescription{
+                font-size: 12px;
+                line-height: 1;
+            }
+        }
+        .profesores{
+            grid-area: profesores;
+            h2{
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+            }
+            h3{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        .preguntasFrecuentes{
+            grid-area: preguntasFrecuentes;
+            h2{
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+            }
+            h3{
+                font-size: 15px;
+            }
+            p{
+                font-size: 12px;
+            }
         }
     }
 }

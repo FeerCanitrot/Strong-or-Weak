@@ -1,3 +1,14 @@
+@mixin s {
+    @media (min-width: 360px) and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin m {
+    @media (min-width: 480px) and (max-width:768px){
+        @content;
+    }
+}
 .main__register{
     display: grid;
     grid-template-rows: auto auto 140px;
@@ -17,5 +28,33 @@
     .container h1{
         font-size: 50px;
         font-weight:bold;
+    }
+    @include m{
+        .form__register{
+            .form-group label{
+                font-size: 20px;
+            }
+            button{
+                font-size: 17px;
+            }
+        }
+        .container h1{
+            font-size: 30px;
+        }
+    }
+    @include s{
+        .form__register{
+            .form-group label{
+                font-size: 20px;
+            }
+            button{
+                width: 200px;
+                height: 60px;
+                font-size: 17px;
+            }
+        }
+        .container h1{
+            font-size: 25px;
+        }
     }
 }

@@ -1,7 +1,31 @@
+@mixin s {
+    @media (min-width: 360px) and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin m {
+    @media (min-width: 480px) and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin l {
+    @media (min-width: 768px) and (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1024px) and (max-width:1440px){
+        @content;
+    }
+}
+
 .main__activity{
     display: grid;
     width: 100%;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto 140px;
     .section__activity{
         background-color: $color-primary;
     }
@@ -18,14 +42,13 @@
         .articleGym{
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             text-align: center;
             box-shadow: 2px 5px 7px 3px ;
             margin: 20% 0 0 3%;
             h2{
                 font-size: 40px;
-                margin-bottom: 20px;
+                margin:10px 0 20px 0;
             }
             button{
                 font-size: 20px;
@@ -49,6 +72,7 @@
             }
             p{
                 font-size: 20px;
+                padding: 0 8px 0 8px;
             }
         }
         .articleGym:hover{
@@ -67,6 +91,73 @@
             img{
                 width: 90px;
             }
-        } 
+            filter: invert(50%);
+        }
+        @include xl{
+            grid-template-columns: auto auto;
+        }
+        @include l{
+            grid-template-columns: auto auto;
+            .articleGym h2{
+                font-size: 27px;
+            }
+            .articleGym img{
+                width: 250px;
+                height: 300px;
+            }
+            .articleGym p{
+                font-size: 15px;
+            }
+            .articleGym button{
+                font-size: 15px;
+                width: 100px;
+                height: 40px;
+            }
+        }
+        @include m{
+            grid-template-columns: auto;
+            .articleGym h2{
+                font-size: 27px;
+            }
+            .articleGym img{
+                width: 300px;
+                height: 350px;
+            }
+            .articleGym p{
+                font-size: 17px;
+            }
+            .articleGym button{
+                font-size: 20px;
+                width: 130px;
+                height: 50px;
+            }
+            .articleGym{
+                margin: 20px 20px 20px 20px;
+            }
+        }
+        @include s{
+            grid-template-columns: auto;
+            .articleGym h2{
+                font-size: 20px;
+            }
+            .articleGym img{
+                width: 250px;
+                height: 300px;
+            }
+            .articleGym p{
+                font-size: 13px;
+            }
+            .articleGym button{
+                font-size: 15px;
+                width: 80px;
+                height: 40px;
+            }
+            .articleGym{
+                margin: 40px 20px 40px 20px;
+            }
+            .main__fixed img{
+                width: 60px;
+            }
+        }
     }
 }

@@ -1,8 +1,57 @@
+@mixin s {
+    @media (min-width: 360px) and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin m {
+    @media (min-width: 480px) and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin ml {
+    @media (min-width: 480px) and (max-width:768px) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin l {
+    @media (min-width: 768px) and (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin ll {
+    @media (min-width: 768px) and (max-width:1024px) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1024px) and (max-width:1440px){
+        @content;
+    }
+}
+
 .main__index{
     display: grid;
     width: 100%;
-    grid-template-rows: auto auto auto 140px;
+    grid-template-rows: auto auto 1000px 140px;
+    @include xl{
+        grid-template-rows: auto auto 800px 140px;
+    }
+    @include l{
+        grid-template-rows: auto auto 700px 140px;
+    }
+    @include m{
+        grid-template-rows: auto auto 600px 140px;
+    }
+    @include s{
+        grid-template-rows: auto auto 600px 140px;
+    }
 }
+
 .main__title{
     height: 80vh;
     display: flex;
@@ -10,7 +59,7 @@
     justify-content: space-around;
     align-items:center;
     img{
-        width: 25%;
+        width: 500px;
     }
     h1{
         font-size: 90px;
@@ -18,7 +67,56 @@
         color: $color-text;
         padding: 3% 10% 3% 10%;
     }
+    @include xl{
+        img{
+            width: 400px;
+        }
+        h1{
+            font-size: 80px;
+        }
+    }
+    @include l{
+        img{
+            width: 400px;
+        }
+        h1{
+            font-size: 60px;
+        }
+    }
+    @include ll{
+        img{
+            width: 200px;
+        }
+        h1{
+            font-size: 50px;
+        }
+    }
+    @include m{
+        img{
+            width: 300px;
+        }
+        h1{
+            font-size: 40px;
+        }
+    }
+    @include ml{
+        img{
+            width: 150px;
+        }
+        h1{
+            font-size: 35px;
+        }
+    }
+    @include s{
+        img{
+            width: 280px;
+        }
+        h1{
+            font-size: 27px;
+        }
+    }
 }
+
 .main__section2{
     background-color: $color-primary;
     padding-top: 2%;
@@ -27,6 +125,7 @@
     p{
         font-size: 35px;
         line-height: 1.7;
+        padding: 0 20px 0 20px;
     }
     button{
         font-size: 35px;
@@ -44,7 +143,7 @@
         margin-bottom: 5%;
     }
     .main__activity h2{
-        font-size: 40px;
+        font-size: 50px;
     }
     .main__fixed{
         position: fixed;
@@ -55,8 +154,66 @@
         img{
             width: 90px;
         }
+        filter: invert(50%);
+    }
+    @include xl{
+        p{
+            font-size: 25px;
+        }
+        button{
+            font-size: 27px;
+            width: 200px;
+        }
+        .main__activity h2{
+            font-size: 40px;
+        }
+    }
+    @include l{
+        p{
+            font-size: 20px;
+        }
+        button{
+            font-size: 22px;
+            width: 160px;
+            height: 60px;
+        }
+        .main__activity h2{
+            font-size: 30px;
+        }
+    }
+    @include m{
+        p{
+            font-size: 13px;
+        }
+        button{
+            font-size: 17px;
+            width: 120px;
+            height: 50px;
+        }
+        .main__activity h2{
+            margin-top: 40px;
+            font-size: 24px;
+        }
+    }
+    @include s{
+        p{
+            font-size: 10px;
+        }
+        button{
+            font-size: 13px;
+            width: 100px;
+            height: 40px;
+        }
+        .main__activity h2{
+            margin-top: 40px;
+            font-size: 20px;
+        }
+        .main__fixed img{
+            width: 60px;
+        }
     }     
 }
+
 .main__footer{
     background-color: rgba(255, 79, 202, 0.658);
     display: grid;
@@ -91,5 +248,21 @@
     .main__copyright{
         grid-area: footer__copyright;
         justify-content: end;
-    }   
+    }
+    @include m{
+        h3{
+            font-size: 15px;
+        }
+        p{
+            font-size: 12px;
+        }   
+    }
+    @include s{
+        h3{
+            font-size: 12px;
+        }
+        p{
+            font-size: 8px;
+        }   
+    }
 }
