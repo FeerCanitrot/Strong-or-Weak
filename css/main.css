@@ -20,20 +20,17 @@ p, a, li, span, input, button, table, form, nav, ul {
   color: rgb(153, 153, 153);
 }
 
-.main__activity button {
-  font-size: 35px;
-  font-style: italic;
-  width: 16%;
-  height: 20%;
-  color: rgb(216, 255, 108);
-  padding: 10px 20px;
+.btn1 {
+  margin: 50px 0 100px 0;
+  width: 200px;
+  height: 80px;
   background-color: rgb(216, 255, 108);
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;
   border-radius: 50px;
-  margin-top: 2%;
-  margin-bottom: 5%;
+}
+.btn1 span {
+  font-size: 30px;
+  color: #131518;
+  cursor: pointer;
 }
 
 .header__index img {
@@ -149,21 +146,6 @@ body {
   font-size: 35px;
   line-height: 1.7;
   padding: 0 20px 0 20px;
-}
-.main__section2 button {
-  font-size: 35px;
-  font-style: italic;
-  width: 300px;
-  height: 80px;
-  color: rgb(216, 255, 108);
-  padding: 10px 20px;
-  background-color: rgb(216, 255, 108);
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-  margin-top: 2%;
-  margin-bottom: 5%;
 }
 .main__section2 .main__activity h2 {
   font-size: 50px;
@@ -286,6 +268,16 @@ body {
   }
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 .main__activity {
   display: grid;
   width: 100%;
@@ -347,6 +339,14 @@ body {
 }
 .main__activity .class__container .articleGym:not(hover) {
   transition: transform 0.3s ease-in-out;
+}
+.main__activity .class__container .articleGym {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }
 .main__activity .class__container .main__fixed {
   position: fixed;
