@@ -36,7 +36,7 @@
 .main__activity{
     display: grid;
     width: 100%;
-    grid-template-rows: auto auto auto 140px;
+    grid-template-rows: auto auto auto auto;
     .section__activity{
         background-color: $color-primary;
     }

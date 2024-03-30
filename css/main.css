@@ -48,26 +48,26 @@ body {
 .main__index {
   display: grid;
   width: 100%;
-  grid-template-rows: auto auto 1000px 140px;
+  grid-template-rows: auto auto 1000px auto;
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   .main__index {
-    grid-template-rows: auto auto 800px 140px;
+    grid-template-rows: auto auto 800px auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .main__index {
-    grid-template-rows: auto auto 700px 140px;
+    grid-template-rows: auto auto 700px auto;
   }
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .main__index {
-    grid-template-rows: auto auto 600px 140px;
+    grid-template-rows: auto auto 600px auto;
   }
 }
 @media (min-width: 360px) and (max-width: 480px) {
   .main__index {
-    grid-template-rows: auto auto 600px 140px;
+    grid-template-rows: auto auto 600px auto;
   }
 }
 
@@ -218,54 +218,18 @@ body {
   }
 }
 
-.main__footer {
-  background-color: rgba(255, 79, 202, 0.658);
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "footer__redes footer__iconos" "footer__copyright footer__copyright";
-  justify-content: space-between;
-}
-.main__footer h3 {
-  font-size: 20px;
-  font-family: Arial, sans-serif;
-  color: #131518;
+.main__footer a {
+  text-decoration: none;
+  font-size: 17px;
 }
 .main__footer p {
-  color: #131518;
-  font-size: 15px;
+  font-size: 17px;
 }
-.main__footer .main__redes {
-  grid-area: footer__redes;
+.main__footer a:hover {
+  color: #0D6EFD !important;
 }
-.main__footer .main__iconos {
-  grid-area: footer__iconos;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-}
-.main__footer li {
-  list-style: none;
-}
-.main__footer .main__copyright {
-  grid-area: footer__copyright;
-  justify-content: end;
-}
-@media (min-width: 480px) and (max-width: 768px) {
-  .main__footer h3 {
-    font-size: 15px;
-  }
-  .main__footer p {
-    font-size: 12px;
-  }
-}
-@media (min-width: 360px) and (max-width: 480px) {
-  .main__footer h3 {
-    font-size: 12px;
-  }
-  .main__footer p {
-    font-size: 8px;
-  }
+.main__footer i {
+  font-size: 25px;
 }
 
 @keyframes show {
@@ -281,7 +245,7 @@ body {
 .main__activity {
   display: grid;
   width: 100%;
-  grid-template-rows: auto auto auto 140px;
+  grid-template-rows: auto auto auto auto;
 }
 .main__activity .section__activity {
   background-color: #131518;
@@ -653,7 +617,7 @@ body {
 
 .main__register {
   display: grid;
-  grid-template-rows: auto auto 140px;
+  grid-template-rows: auto auto auto;
   grid-area: auto;
   background-color: rgba(0, 0, 0, 0.5960784314);
 }

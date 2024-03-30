@@ -11,7 +11,7 @@
 }
 .main__register{
     display: grid;
-    grid-template-rows: auto auto 140px;
+    grid-template-rows: auto auto auto;
     grid-area: auto;
     background-color: $background-title;
     .form__register{

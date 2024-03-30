@@ -37,18 +37,18 @@
 .main__index{
     display: grid;
     width: 100%;
-    grid-template-rows: auto auto 1000px 140px;
+    grid-template-rows: auto auto 1000px auto;
     @include xl{
-        grid-template-rows: auto auto 800px 140px;
+        grid-template-rows: auto auto 800px auto;
     }
     @include l{
-        grid-template-rows: auto auto 700px 140px;
+        grid-template-rows: auto auto 700px auto;
     }
     @include m{
-        grid-template-rows: auto auto 600px 140px;
+        grid-template-rows: auto auto 600px auto;
     }
     @include s{
-        grid-template-rows: auto auto 600px 140px;
+        grid-template-rows: auto auto 600px auto;
     }
 }
 
@@ -198,56 +198,18 @@
         }
     }     
 }
-
 .main__footer{
-    background-color: rgba(255, 79, 202, 0.658);
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "footer__redes footer__iconos"
-    "footer__copyright footer__copyright"
-    ;
-    justify-content: space-between;
-    h3{
-        font-size: 20px;
-        font-family: Arial, sans-serif;
-        color: $color-primary;
+    a{
+        text-decoration: none;
+        font-size: 17px;
     }
     p{
-        color: $color-primary;
-        font-size: 15px;
+        font-size: 17px;
     }
-    .main__redes{
-        grid-area: footer__redes;
+    a:hover{
+        color: #0D6EFD !important;
     }
-    .main__iconos{
-        grid-area: footer__iconos;
-        display: flex;
-        align-items:flex-end;
-        flex-direction: column;
-    }
-    li{
-        list-style: none;
-    }
-    .main__copyright{
-        grid-area: footer__copyright;
-        justify-content: end;
-    }
-    @include m{
-        h3{
-            font-size: 15px;
-        }
-        p{
-            font-size: 12px;
-        }   
-    }
-    @include s{
-        h3{
-            font-size: 12px;
-        }
-        p{
-            font-size: 8px;
-        }   
+    i{
+        font-size: 25px;
     }
 }
