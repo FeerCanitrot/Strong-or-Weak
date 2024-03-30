@@ -11,3 +11,9 @@ sr.reveal('.main__section', {
     origin: 'bottom',
     distance: '-180px',
 });
+
+sr.reveal('.main__footer', {
+    duration: 2000,
+    origin: 'left',
+    distance: '800px',
+});
