@@ -39,7 +39,7 @@ p, a, li, span, input, button, table, form, nav, ul {
 }
 
 body {
-  background-image: url(../../assets/img/Clases/detrasDeClases2.webp);
+  background-image: url(assets/img/Clases/detrasDeClases2.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
