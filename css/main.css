@@ -21,16 +21,17 @@ p, a, li, span, input, button, table, form, nav, ul {
 }
 
 .btn1 {
-  margin: 50px 0 100px 0;
+  margin: 50px auto 100px auto;
+  font-style: italic;
   width: 200px;
   height: 80px;
   background-color: rgb(216, 255, 108);
   border-radius: 50px;
 }
-.btn1 span {
-  font-size: 30px;
+.btn1 a {
+  text-decoration: none;
   color: #131518;
-  cursor: pointer;
+  font-size: 30px;
 }
 
 .header__index img {
@@ -38,7 +39,7 @@ p, a, li, span, input, button, table, form, nav, ul {
 }
 
 body {
-  background-image: url(../assets/img/Clases/detrasDeClases2.jpg);
+  background-image: url(../../assets/img/Clases/detrasDeClases2.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -165,9 +166,11 @@ body {
   .main__section2 p {
     font-size: 25px;
   }
-  .main__section2 button {
-    font-size: 27px;
+  .main__section2 .btn1 {
     width: 200px;
+  }
+  .main__section2 .btn1 a {
+    font-size: 27px;
   }
   .main__section2 .main__activity h2 {
     font-size: 40px;
@@ -177,10 +180,12 @@ body {
   .main__section2 p {
     font-size: 20px;
   }
-  .main__section2 button {
-    font-size: 22px;
+  .main__section2 .btn1 {
     width: 160px;
     height: 60px;
+  }
+  .main__section2 .btn1 a {
+    font-size: 22px;
   }
   .main__section2 .main__activity h2 {
     font-size: 30px;
@@ -190,10 +195,12 @@ body {
   .main__section2 p {
     font-size: 13px;
   }
-  .main__section2 button {
-    font-size: 17px;
+  .main__section2 .btn1 {
     width: 120px;
     height: 50px;
+  }
+  .main__section2 .btn1 a {
+    font-size: 17px;
   }
   .main__section2 .main__activity h2 {
     margin-top: 40px;
@@ -204,10 +211,12 @@ body {
   .main__section2 p {
     font-size: 10px;
   }
-  .main__section2 button {
-    font-size: 13px;
+  .main__section2 .btn1 {
     width: 100px;
     height: 40px;
+  }
+  .main__section2 .btn1 a {
+    font-size: 13px;
   }
   .main__section2 .main__activity h2 {
     margin-top: 40px;

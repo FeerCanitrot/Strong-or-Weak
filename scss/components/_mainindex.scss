@@ -145,9 +145,11 @@
         p{
             font-size: 25px;
         }
-        button{
-            font-size: 27px;
+        .btn1{
             width: 200px;
+            a{
+                font-size: 27px;
+            }
         }
         .main__activity h2{
             font-size: 40px;
@@ -157,10 +159,12 @@
         p{
             font-size: 20px;
         }
-        button{
-            font-size: 22px;
+        .btn1{
             width: 160px;
             height: 60px;
+            a{
+                font-size: 22px;
+            }
         }
         .main__activity h2{
             font-size: 30px;
@@ -170,10 +174,12 @@
         p{
             font-size: 13px;
         }
-        button{
-            font-size: 17px;
+        .btn1{
             width: 120px;
             height: 50px;
+            a{
+                font-size: 17px;
+            }
         }
         .main__activity h2{
             margin-top: 40px;
@@ -184,10 +190,12 @@
         p{
             font-size: 10px;
         }
-        button{
-            font-size: 13px;
+        .btn1{
             width: 100px;
             height: 40px;
+            a{
+                font-size: 13px;
+            }
         }
         .main__activity h2{
             margin-top: 40px;
